@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="com.spring.airbnb.review.mapper.ReviewAttachMapper">
+  
+  	<insert id="insert">
+  		INSERT INTO review_attach(uuid, uploadPath, fileName, filetype, r_no)
+  		VALUES (#{uuid}, #{uploadPath}, #{fileName}, #{filetype}, #{r_no})
+  	</insert>
+  	
+  	<delete id="delete">
+  		DELETE from review_attach
+  		WHERE uuid = #{uuid}
+  	</delete>
+  	
+  	<select id="findByRno" resultType="com.spring.airbnb.review.domain.ReviewAttachDTO">
+  		SELECT * 
+  		FROM review_attach
+  		WHERE r_no = #{r_no}
+  	</select>
+  	
+  	<delete id="deleteAll">
+  		DELETE FROM review_attach
+  		WHERE r_no = #{r_no}
+  	</delete>
+  	
+  		<select id="getOldFiles" resultType="com.spring.airbnb.review.domain.ReviewAttachDTO">
+  		SELECT *
+  		FROM review_attach
+  		WHERE uploadpath = to_char(sysdate -1, 'yyyy\mm\dd')
+  	</select>
+  	
+  	<select id="reviewResult" resultType="com.spring.airbnb.review.domain.ReviewResultDTO">
+  		SELECT *
+		FROM review, review_attach
+		WHERE review.r_no = review_attach.r_no
+		AND review.r_r_code = #{r_code}
+  	</select>
+  </mapper>

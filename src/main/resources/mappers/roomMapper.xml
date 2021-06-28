@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="RoomMapper">
+ 
+	 <select id="roomList" parameterType="String" resultType="com.spring.airbnb.domain.RoomDTO">
+	SELECT *
+	FROM room
+	WHERE r_sido = #{sido}
+	</select>
+
+	<select id="roomDetail" parameterType="String" resultType="com.spring.airbnb.domain.RoomDTO">
+		SELECT *
+		FROM room
+		WHERE r_code = #{r_code}
+	</select>
+	
+	<select id="nextRno" resultType="integer">
+		select room_SEQ.currval
+		from room
+	</select>
+	
+	<insert id="insertRoom">
+		Insert INTO room(r_code, r_name, r_address, r_img, r_service, r_score, r_sido, r_price, r_accomcheckin, r_accomcheckout)
+		VALUES(room_seq.nextval, #{r_name}, #{r_address}, #{r_img}, #{r_service}, #{r_score}, #{r_sido}, #{r_price}, #{r_accomCheckIn}, #{r_accomCheckOut})
+		<selectKey keyProperty="r_code" resultType="String" order="AFTER">
+			SELECT room_seq.currval FROM dual
+		</selectKey>
+	</insert>
+	
+	<update id="updateImg">
+		UPDATE room
+		SET r_img = #{r_img}
+		WHERE r_code = #{r_code}
+	</update>
+ </mapper>

@@ -1,0 +1,317 @@
+@charset "UTF-8";
+
+@font-face {
+	src : url("resources/fonts/BMHANNAPro.ttf");
+	font-family: "HANNA"
+}
+@font-face {
+	src : url("resources/fonts/Avenir Light.ttf");
+	font-family: "Light"
+}
+h1 {  
+    font-family: "HANNA";
+    font-size: 95px;
+}
+
+h2 {  
+    font-family: "HANNA";
+    font-size: 49px;
+}
+
+h3 {  
+    font-family: "NANUM";
+}
+
+.headB li{
+	font-family: "HANNA";
+	font-size: 20px;
+}
+
+.headB li a {
+	color: #444444;
+}
+
+.head-color{
+	width: 100%;
+	height: 250px;
+	text-align: center;
+	background-color: rgba(212,236,234,0.3);
+}
+
+.logo {
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.headB ul {
+	margin: 10px;
+	padding: 0;
+	display:inline-block;
+	text-align: center;
+}
+
+.headB ul li {
+	padding: 10px 20px 10px 20px;
+	float: left;
+	list-style: none;
+}
+
+.headB ul li a{
+	text-decoration: none;
+}
+
+.headB li ul {
+	display: none;
+	height: auto;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	position: absolute;
+	width: 250px;
+	color: white;
+	z-index: 200px;
+}
+
+.headB ul li:hover {
+	background-color:#EDE9E1;
+}
+
+
+article{
+	display: block;
+}
+
+.main {
+	text-align: center;
+	margin-top:20px;
+}
+
+
+.weather {
+	background:rgba(255,255,255,0.5);
+	position: absolute;
+    top: 410px;
+    left: 400px;
+    padding-left: 40px;
+    width: 400px;
+    height: 370px;
+}
+
+.post {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 30px 10px;
+}
+
+.post h1 {
+    padding-left: 3rem;
+    padding-bottom: 25px;
+    border-bottom: solid 2px #e2e2e2;
+}
+.season {
+	text-align: center;
+}
+.season .contact {
+    margin: 10px 20px 80px 25px;
+    text-align: center;
+    border: 10px;
+    float:left;
+    
+}
+
+.season img {
+	border-radius: 50%;
+    height: 280px;
+    width: 280px;
+}
+
+.conB .container {
+	clear: both;
+}
+
+.thema .contact{
+    text-align: center;
+	float: left;
+}
+.thema .contact1{
+    text-align: center;
+}
+
+.thema img {
+	padding-left: 15px;
+	margin: 18px;
+	width: 380px;
+	height: 330px;
+}
+
+.loginbox{
+	text-align: center;
+	height: 250px;
+	width: 800px;
+	margin: auto;
+}
+
+
+.login h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+form fieldset {
+	padding: 10px 0 30px 5px;
+	border: none;
+	text-align: center;
+	font-size: 22px;
+	font-family: "HANNA";  
+}
+
+.loginbox h2{
+	text-align: center;
+	width: 300px;
+	float: left;
+	margin: 30px 0;
+}
+
+form .loginbox input{
+	text-align: center;
+	width: 800px;
+	height: 300px;
+	margin: auto;
+	left: 225px;
+	margin: 30px 0; 
+	width: 400px;
+	height: 50px;
+	border-style: none;
+	border-bottom: 3px solid #525252;
+}
+
+fieldset checkbox{
+	width: 20px;
+	height: 20px;
+
+}
+form .submit {
+	font-family: "NANUM";
+	width: 200px;
+	border-style: none;
+	font-size: 24px;
+	background-repeat: repeat-x;
+	background-position: center center;
+	margin: 0 0 0 20px;
+}
+
+form .cancel {
+	font-family: "NANUM";
+	width: 200px;
+	border-style: none;
+	font-size: 24px;
+	background-repeat: repeat-x;
+	background-position: center center;
+	margin: 0 0 0 20px;
+}
+
+form #buttons {
+	width: 800px;
+	margin: auto;
+	text-align: center;
+}
+
+form .main_join {
+	text-align: center;
+	margin: auto;
+	width: 500px;
+	height: 100px;
+}
+
+form .main_join .gomain{
+	padding: 10px 20px 10px 20px;
+	margin: 0 20px 0 50px;
+	font-size: 22px;
+
+}
+form .main_join .gojoin{
+	padding: 10px 20px 10px 20px;
+	margin: 0 20px 0 20px;
+	font-size: 22px;
+	font-family: "HANNA";
+}
+
+.easylogin {
+	margin: auto;
+	font-size: 28px;
+}
+
+.easylogin h2 {
+	text-align: center;
+}
+
+.join h1{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mypage table{
+	width: 700px;
+	border: none;
+	border-collapse:collapse;
+}
+
+.mypage table tr{
+	height: 90px;
+}
+
+#portfolio .portfolio-item {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(254, 209, 54, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+footer {
+	margin:10px 0 0 0;
+	height:50px;
+}
+
+footer #copy {
+	margin: 20px 0 40px 700px;
+	width:600px;	
+	float:left;	
+	
+}
+
