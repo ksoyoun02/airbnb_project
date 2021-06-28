@@ -20,3 +20,8 @@ hs_err_pid*
 
 # eclipse 임시 설정
 *.launch
+
+.classpath
+.factorypath
+.springBeans
+.project
