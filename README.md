@@ -14,6 +14,11 @@
 	![image](https://user-images.githubusercontent.com/78129829/124386999-e885c800-dd17-11eb-9815-cdc4f6111dfa.png)
 
 -----------
-• 개발환경
-	![image](https://user-images.githubusercontent.com/78129829/124387010-efacd600-dd17-11eb-9244-aaee549c8d5b.png)
+![image](https://user-images.githubusercontent.com/78129829/124387010-efacd600-dd17-11eb-9244-aaee549c8d5b.png)
+
+-----------
+<모델링>
+![image](https://user-images.githubusercontent.com/78129829/124387238-ae68f600-dd18-11eb-9b49-27f5952458d2.png)
+
+-----------
 
