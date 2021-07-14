@@ -14,11 +14,17 @@
 	![image](https://user-images.githubusercontent.com/78129829/124386999-e885c800-dd17-11eb-9815-cdc4f6111dfa.png)
 
 -----------
-![image](https://user-images.githubusercontent.com/78129829/124387010-efacd600-dd17-11eb-9244-aaee549c8d5b.png)
+<center><img src="https://user-images.githubusercontent.com/78129829/124387010-efacd600-dd17-11eb-9244-aaee549c8d5b.png" width="600" height="350"></center>
 
 -----------
 <모델링>
-![image](https://user-images.githubusercontent.com/78129829/124387238-ae68f600-dd18-11eb-9b49-27f5952458d2.png)
+<center><img src="https://user-images.githubusercontent.com/78129829/125614236-bf9c7f20-006d-48e5-8b54-d5b3240351d7.png" width="600" height="350"></center>
+<center><img src="https://user-images.githubusercontent.com/78129829/125614464-faf6af83-bb2b-49c6-9c03-77d7a1b05c77.png" width="600" height="350"></center>
 
 -----------
-
+1. 메인
+2. 회원
+3. 숙소
+4. 예약
+5. 후기
+6. 게시판
